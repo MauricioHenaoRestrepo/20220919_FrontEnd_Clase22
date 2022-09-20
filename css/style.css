@@ -11,60 +11,73 @@ body {
 
 header {
   background-image: linear-gradient(#005677, #ffffff);
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 header img {
-  margin-top: 20px;
-  width: 150px;
+  margin: 2rem 0;
+  width: 5rem;
 }
 header h1 {
+  width: 100%;
   background-color: #c4c4c4;
   color: #005677;
-  font-size: 35px;
+  font-size: 2.2rem;
   font-weight: 700;
   letter-spacing: 3px;
-  margin-bottom: 130px;
-  padding: 10px;
+  padding: 0.5rem;
   text-align: center;
   text-transform: uppercase;
 }
 
-main h2 {
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0;
+}
+main div.bloques {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+main div.bloques h2 {
   background-color: #c4c4c4;
   color: #005677;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 3px;
-  margin: 40px 0 20px;
-  padding: 5px 10px;
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
 }
-main ul li {
-  padding: 0 20px;
+main div.bloques ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.5rem 0.8rem;
 }
-main ul li span.textoNegrita {
-  font-weight: bold;
+main div.bloques ul li {
+  display: flex;
 }
-main ul li .textoCursiva {
+main div.bloques ul li h3.h3Cursiva {
   font-style: italic;
+  width: 15rem;
 }
-main ul li p.sangria {
-  margin-bottom: 10px;
-  padding-left: 87px;
-}
-main ul.vineta {
-  list-style: none;
+main div.bloques ul li p,
+main div.bloques ul li div {
+  margin-left: 2.5rem;
+  padding-bottom: 0.3rem;
 }
 
 footer {
   background-color: #005677;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
-  margin-top: 130px;
-  padding: 1px;
+  padding: 1rem;
   text-align: center;
 }
 footer a {
-  margin: 10px;
+  margin: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

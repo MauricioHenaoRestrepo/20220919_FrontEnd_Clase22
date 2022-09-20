@@ -1,72 +1,85 @@
+// https://www.figma.com/file/VfoIoqXwXUo5Gddw9h5M5I/Clase-07-Intro-a-CSS
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
 header {
     background-image: linear-gradient(#005677, #ffffff);
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     img {
-        margin-top: 20px;
-        width: 150px;
+        margin: 2rem 0;
+        width: 5rem;
     }
     h1 {
+        width: 100%;
         background-color: #c4c4c4;
         color: #005677;
-        font-size: 35px;
+        font-size: 2.2rem;
         font-weight: 700;
         letter-spacing: 3px;
-        margin-bottom: 130px;
-        padding: 10px;
+        padding: 0.5rem;
         text-align: center;
         text-transform: uppercase;
     }
 }
 
-// este es un comentario
 main {
-    h2 {
-        background-color: #c4c4c4;
-        color: #005677;
-        font-size: 20px;
-        font-weight: 700;
-        letter-spacing: 3px;
-        margin: 40px 0 20px;
-        padding: 5px 10px;
-        text-transform: uppercase;
-    }
-    ul {
-        li {
-            padding: 0 20px;
-            span.textoNegrita {
-                font-weight: bold;
-            }
-            & .textoCursiva {
-                font-style: italic;
-            }
-            p.sangria {
-                margin-bottom: 10px;
-                padding-left: 87px;
-            }
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0;
+    div.bloques {
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        h2 {
+            background-color: #c4c4c4;
+            color: #005677;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            padding: 0.5rem 0.8rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
         }
-        &.vineta {
-            list-style: none;
+        ul {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0.5rem 0.8rem;
+            li {
+                display: flex;
+                h3.h3Cursiva {
+                    font-style: italic;
+                    width: 15rem;
+                }
+                p,
+                div {
+                    margin-left: 2.5rem;
+                    padding-bottom: 0.3rem;
+                }
+            }
         }
     }
 }
+
 footer {
     background-color: #005677;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
-    margin-top: 130px;
-    padding: 1px;
+    padding: 1rem;
     text-align: center;
     a {
-        margin: 10px;
+        margin: 0.5rem;
     }
 }
